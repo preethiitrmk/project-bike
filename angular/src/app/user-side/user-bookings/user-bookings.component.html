@@ -1,0 +1,27 @@
+<app-user-navbar></app-user-navbar>  
+<div class="limiter" id="userDashboard" style="width:100%; height:600px;">
+        <div class="container-table100">
+          <div class="wrap-table100">
+          <table class="table" style="text-align:center;" cellspacing="0" cellpadding="0">
+            <thead class="row header">
+              <tr class="row">
+                <th class="cell">COMPANY NAME</th>
+                <th class="cell">BIKE MODEL</th>
+                <th class="cell">RENT</th>
+                <th class="cell">DAYS</th>
+                <th class="cell">TOTAL PRICE</th>
+              </tr>
+            </thead>
+            <tbody class="row">
+              <tr *ngFor="let booking of bookings">
+                <td class="cell"><a id="abc" routerLink="/companydetails">{{ booking.company_name}}</a></td>
+                <td class="cell">{{ booking.bike_model }}</td>
+                <td class="cell">{{ booking.rent }}</td>
+                <td class="cell">{{ booking.days }}</td>
+                <td class="cell">{{ booking.total_price }}</td>
+              </tr>
+            </tbody><br>
+            
+          </table><br>
+          </div></div>
+        </div>  

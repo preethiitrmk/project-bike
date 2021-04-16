@@ -1,0 +1,22 @@
+<!-- <p>super-admin-navbar works!</p> -->
+<div class="topnav" id="superAdminNavbar">
+    <a href="#home" class="active">Neo Bikes</a>
+    <div  class="dashboard"><a  routerLink ="/superadmindashboard" >Dashboard</a></div>
+    <div class="allbookings"><a routerLink ="/allbookings">All Bookings</a></div>
+    
+    <a routerLink ="/superadminlogin" style="text-align:right;">Logout</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    
+    </a>
+  </div>
+  <script>
+      function myFunction() {
+        var x = document.getElementById("userNavbar");
+        if (x.className === "userNavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "userNavbar";
+        }
+      }
+      </script>
+  

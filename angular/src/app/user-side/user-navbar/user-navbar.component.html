@@ -1,0 +1,20 @@
+<div class="topnav" id="userNavbar">
+  <a href="#home" class="active">Neo Bikes</a>
+  <div  class="dashboard" id="userDashboardLink"><a  routerLink ="/userDashboard" >Dashboard</a></div>
+  <div class="profile" id="userProfileLink"><a routerLink ="/userProfile">Profile</a></div>
+  <a routerLink ="/userbookings">My Booking</a>
+  <a routerLink ="/login">Logout</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  
+  </a>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("userNavbar");
+      if (x.className === "userNavbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "userNavbar";
+      }
+    }
+    </script>

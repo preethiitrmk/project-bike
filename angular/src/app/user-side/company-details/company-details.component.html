@@ -1,0 +1,44 @@
+
+<app-user-navbar></app-user-navbar>  
+<!-- <legend style="text-align:center;"><h1><b>COMPANY DETAILS</b></h1></legend> -->
+
+    <div class="container" id="companyDetails"style="text-align:center; width:100%; height:auto;" >
+    <br>
+      <div class="container1">
+    <h1> ABC</h1>
+    <p> XYZ,
+        Chennai,
+        600002.</p>
+    <p>1234567890</p>
+    <p>
+    </div><br><br>
+    <div class="container2">
+        <table class="table-striped" style="text-align:center; border-spacing:30px;">
+          <thead>
+              <tr>
+                <th>BIKE MODEL</th><br><br>
+                <th>PRICE</th><br><br>
+                <th>TYPE</th><br><br>
+                <th>STATUS</th><br>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let character of characters">
+              <td><a id="abc" routerLink="/bikedetails">{{ character.bike_model}}</a></td><br><br>
+              <td>{{ character.price }}</td><br><br>
+              <td>{{ character.type }}</td><br><br>
+               <td>{{ character.status }}</td><br> 
+              <!-- <td>{ var a="Available"  }
+                { var b=character.status  }
+                { if a==b }
+                <p id="a1"> Available</p>
+                {{ else }}
+                <p id="a2"> Booked</p>
+                 </td> -->
+
+            </tr><br><br><br>
+          </tbody><br>
+          
+        </table><br><br>
+        </div>
+      </div>  

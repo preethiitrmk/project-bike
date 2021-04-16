@@ -1,0 +1,42 @@
+.table-striped{
+    margin-left:auto;
+    margin-right:auto;
+} 
+#abc {
+    text-decoration: none;
+    color:black;
+}
+.container{
+    justify-content:center;
+    background-color:lightgrey;
+
+}
+.container1{
+    border-radius: 25px;
+  background: #f1f0f0;
+  padding: 20px; 
+  width: 800px;
+  height: 150px;  
+  justify-content:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.container2{
+    border-radius: 25px;
+  background: #f1f0f0;
+  padding: 20px; 
+  width: 800px;
+  height: auto;  
+  justify-content:center;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom:15px;
+}
+#a1{
+    text-align:center;
+    color:green;
+}
+#a2{
+    text-align:center;
+    color:red;
+}

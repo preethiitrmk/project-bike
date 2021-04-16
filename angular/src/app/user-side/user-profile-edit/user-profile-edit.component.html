@@ -1,0 +1,66 @@
+
+<app-user-navbar></app-user-navbar>  
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Signup</title>
+<style>
+h1{text-align:center;}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body style="width:100%; height:600px;">
+
+	<form>
+	    
+		<table class="center">
+            <a routerLink='/userprofile' style="text-align:center;">back</a><br>
+            
+
+                <img src="img.jpeg" style="max-height:250px">
+                
+                
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" name="name" id="username" /><td>
+            </tr><br>
+			<tr>
+				<td> <label> Email: </label> </td>
+				<td><input type="email" name="email" id="email" maxlength="50" /> </td>
+			</tr><br>
+            <tr>
+				<td><label>Password:</label></td>
+				<td><input type="password" name="pass" id="password" minlength="8"/></td>
+			</tr><br>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="number" name="age" id="userAge" /><td>
+            </tr><br>
+			<tr>
+				<td> <label> Mobile Number </label> </td>
+				<td><input type="tel" name="mobilenumber"id="mobilenumber"  maxlength="50" /> </td>
+			</tr><br>
+		
+			
+            
+            
+			<tr>
+				<td></td>
+				<td><input type="Submit" value="Save Changes" routerLink="/userprofile" id="editProfileButton"/> </td>
+			</tr>
+			<br><br>
+			
+		
+		</table>
+
+		
+		
+	    </form>
+		
+    </body>
+</html>
+
